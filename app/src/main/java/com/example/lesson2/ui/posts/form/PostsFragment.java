@@ -28,7 +28,6 @@ import retrofit2.Response;
 
 
 public class PostsFragment extends Fragment {
-
     private FragmentPostsBinding binding;
     private PostsAdapter adapter;
 
@@ -116,7 +115,6 @@ public class PostsFragment extends Fragment {
         bundle.putSerializable("key", post);
         NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment);
         navController.navigate(R.id.formFragment, bundle);
-
     }
 
 }
